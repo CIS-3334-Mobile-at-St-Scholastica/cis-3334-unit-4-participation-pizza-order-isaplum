@@ -9,7 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="css.cis3334.pizzaorder.MainActivity">
+    tools:context="css.cis3334.pizzaorder.MainActivity"
+    android:weightSum="1">
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -23,14 +24,14 @@
             android:layout_weight="1" />
 
         <RadioButton
-            android:text="MediumPizza"
+            android:text="@string/mediumpizza"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioButtonMedium"
             android:layout_weight="1" />
 
         <RadioButton
-            android:text="Large Pizza"
+            android:text="@string/large_pizza"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioButtonLarge"
@@ -39,33 +40,46 @@
     </RadioGroup>
 
     <CheckBox
-        android:text="CheckBoxExtraCheese"
+        android:text="@string/checkboxextracheese"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/checkBoxCheese"
         android:layout_marginTop="12dp" />
 
+    <CheckBox
+        android:text="CheckBoxDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxDeluvery"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Select Topping:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pizzaorderlbl" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnery"
+        android:layout_weight="0.08" />
+
     <Button
-        android:text="Order"
+        android:text="@string/order"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonOrder"
         android:onClick="onClickOrder" />
 
-    <CheckBox
-        android:text="CheckBoxDelivery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBoxDeluvery" />
-
     <TextView
-        android:text="Total Due:"
+        android:text="@string/total_due"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewTotal" />
 
     <TextView
-        android:text="Order Status: Nothing ordered yet"
+        android:text="@string/order_status_nothing_ordered_yet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewStatus" />
