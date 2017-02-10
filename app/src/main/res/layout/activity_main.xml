@@ -63,7 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinnery"
-        android:layout_weight="0.08" />
+        android:layout_weight="0.08"
+        android:entries="@array/pizza_array" />
 
     <Button
         android:text="@string/order"

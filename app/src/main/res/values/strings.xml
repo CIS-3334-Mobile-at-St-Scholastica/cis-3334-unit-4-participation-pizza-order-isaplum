@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">PizzaOrder</string>
     <string name="small_pizza">Small Pizza</string>
+    <string name="large_pizza">Large Pizza</string>
+    <string name="checkboxextracheese">CheckBoxExtraCheese</string>
+    <string name="mediumpizza">MediumPizza</string>
+    <string name="order_status_nothing_ordered_yet">Order Status: Nothing ordered yet</string>
+    <string name="order">Order</string>
+    <string name="total_due">Total Due:</string>
+
+        <string-array name="pizza_array">
+            <item>Pepperoni</item>
+            <item>Pineapple</item>
+            <item>Canadian Bacon</item>
+            <item>Cheese</item>
+            <item>Sausage</item>
+        </string-array>
+
 </resources>

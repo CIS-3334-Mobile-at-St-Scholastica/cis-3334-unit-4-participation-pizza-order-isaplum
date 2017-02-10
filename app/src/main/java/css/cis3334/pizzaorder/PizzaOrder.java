@@ -1,5 +1,7 @@
 package css.cis3334.pizzaorder;
 
+import android.widget.ArrayAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executors;
@@ -38,7 +40,7 @@ public class PizzaOrder implements PizzaOrderInterface {
 
         return newPizza.toString();             // return a description of what was ordered
     }
-
+   
     @Override
     public Double getTotalBill() {
         Double total = 0.0;
